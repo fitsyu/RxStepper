@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import RxStepper
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+     
+        
+        let capactiyStepper = RxStepper()
+        capactiyStepper.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(capactiyStepper)
+        
+        NSLayoutConstraint.activate([
+            capactiyStepper.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            capactiyStepper.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+        ])
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

@@ -1,0 +1,6 @@
+framework module RxStepper {
+  umbrella header "RxStepper-umbrella.h"
+
+  export *
+  module * { export * }
+}

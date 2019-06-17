@@ -190,7 +190,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				994F0DC925DA065C99D0C824 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,28 +304,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxStepper_Example/Pods-RxStepper_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		994F0DC925DA065C99D0C824 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxStepper_Tests/Pods-RxStepper_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxStepper_Tests/Pods-RxStepper_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB24AC5AA1500B7DCABC3DCE /* [CP] Check Pods Manifest.lock */ = {

@@ -1,0 +1,28 @@
+{
+  "name": "RxStepper",
+  "version": "0.1.0",
+  "summary": "A short description of RxStepper.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/fitsyu/RxStepper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fitsyu": "fitsyu2@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/fitsyu/RxStepper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.3"
+  },
+  "swift_version": "5.0",
+  "source_files": "RxStepper/Classes/**/*",
+  "resource_bundles": {
+    "RxStepper": [
+      "RxStepper/Assets/*.xib"
+    ]
+  }
+}
