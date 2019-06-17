@@ -32,10 +32,7 @@ public class RxStepper: UIView {
     }
     
     public override func awakeFromNib() {
-        
-        print("awake from nib")
-        
-        let nib = bundle.loadNibNamed("RxStepper", owner: self, options: nil)
+        let nib = bundle.loadNibNamed("View", owner: self, options: nil)
         
         view = nib?.first as? UIView
         view.frame = self.bounds
@@ -57,7 +54,7 @@ public class RxStepper: UIView {
         + 30.0// label + stepper
         + 8.0 // bottom
 
-        size = CGSize(width: width, height: height)
+        let size = CGSize(width: width, height: height)
         
         return size
     }

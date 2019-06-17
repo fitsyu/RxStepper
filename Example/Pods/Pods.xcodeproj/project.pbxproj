@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F42615F27282F4789BE76796A24F72A /* RxStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4953F4348D935DB14B874F38EC2C9D1 /* RxStepper.xib */; };
+		0F42615F27282F4789BE76796A24F72A /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4953F4348D935DB14B874F38EC2C9D1 /* View.xib */; };
 		12348148737D53A69ABD9D9075CFA7D8 /* Pods-RxStepper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C49DC4318D115F8D47F508A6B2C2C0F /* Pods-RxStepper_Tests-dummy.m */; };
 		1432C26563EF6BBBDFC3266AC5F44605 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		32910FB6B579A7C6DD76807FD4FCA2D5 /* RxStepper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0F57B0EECCD8A965F0FA473CE869 /* RxStepper.bundle */; };
@@ -48,7 +48,7 @@
 /* Begin PBXFileReference section */
 		0C870EAD3E1B21839ADD7FE88B146EE9 /* Pods-RxStepper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RxStepper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		125B1DAA1AE10BEA5CA23A9A488EC40E /* Pods-RxStepper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RxStepper_Tests-umbrella.h"; sourceTree = "<group>"; };
-		1442C963E3EED03E629DF2AD86BE2DF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1442C963E3EED03E629DF2AD86BE2DF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A11ECD1E91DA6C91BD8361519B8CD32 /* Pods-RxStepper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RxStepper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1C49DC4318D115F8D47F508A6B2C2C0F /* Pods-RxStepper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RxStepper_Tests-dummy.m"; sourceTree = "<group>"; };
 		224B4C21497D7E6BF6F0B8123C77753D /* Pods-RxStepper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RxStepper_Example-dummy.m"; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 		2CB80192A8CB994BDC4EB9931E43A09B /* RxStepper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RxStepper-Info.plist"; sourceTree = "<group>"; };
 		2F28DEE3525352E6E9A9C405705BEEAD /* Pods-RxStepper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RxStepper_Example.modulemap"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		367BB3ECDB68176E49CF6AA9902E9A28 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		3C8A0F57B0EECCD8A965F0FA473CE869 /* RxStepper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RxStepper.bundle; path = "RxStepper-RxStepper.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		367BB3ECDB68176E49CF6AA9902E9A28 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3C8A0F57B0EECCD8A965F0FA473CE869 /* RxStepper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxStepper.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		428EED4B981836F85005D0A795321683 /* Pods-RxStepper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RxStepper_Example-frameworks.sh"; sourceTree = "<group>"; };
 		47C50E736BA8D7C27F3C396D13F825A1 /* Pods-RxStepper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RxStepper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4CFF76432E14DE0D1B0B24ED30F433AE /* RxStepper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxStepper-prefix.pch"; sourceTree = "<group>"; };
@@ -69,18 +69,18 @@
 		776C71188309F351FDCEFB4C1DFD5BD4 /* Pods-RxStepper_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RxStepper_Tests-Info.plist"; sourceTree = "<group>"; };
 		79FB81762ED06C5C04B3668CA90E83A1 /* Pods-RxStepper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RxStepper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A9ED285F01B9F4AA97679BD84346156 /* Pods-RxStepper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RxStepper_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1B3824E8D4DD2D4675953AC63753982 /* ResourceBundle-RxStepper-RxStepper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-RxStepper-RxStepper-Info.plist"; sourceTree = "<group>"; };
 		A41111AFB7024009BF220FD527B0F0E1 /* Pods-RxStepper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RxStepper_Example-umbrella.h"; sourceTree = "<group>"; };
 		A64A3E84990F955D46597EDEC159EE93 /* Pods-RxStepper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RxStepper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		B4610CDD791BAB9FE3F66713ECB48A2E /* Pods_RxStepper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RxStepper_Tests.framework; path = "Pods-RxStepper_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B56A4DB5AB73AB3F31F1F3E8DDF604FE /* RxStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxStepper.framework; path = RxStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2C20AE55F9F9E75BB78706DE30B4EF2 /* Pods_RxStepper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RxStepper_Example.framework; path = "Pods-RxStepper_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB6E8A12EFF332EFA816FDC043D9332D /* RxStepper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RxStepper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B4610CDD791BAB9FE3F66713ECB48A2E /* Pods_RxStepper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxStepper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56A4DB5AB73AB3F31F1F3E8DDF604FE /* RxStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C20AE55F9F9E75BB78706DE30B4EF2 /* Pods_RxStepper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxStepper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6E8A12EFF332EFA816FDC043D9332D /* RxStepper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RxStepper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D2EA93BA0168542FC7224A598B8E2281 /* RxStepper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxStepper-dummy.m"; sourceTree = "<group>"; };
 		DAE5770F172A3AD5F64A89D851BE00BC /* RxStepper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxStepper.xcconfig; sourceTree = "<group>"; };
 		E12ECD5A09E6BE52F6267EA9C3A16AD2 /* Pods-RxStepper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RxStepper_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F4953F4348D935DB14B874F38EC2C9D1 /* RxStepper.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = RxStepper.xib; path = RxStepper/Assets/RxStepper.xib; sourceTree = "<group>"; };
+		F4953F4348D935DB14B874F38EC2C9D1 /* View.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = View.xib; path = RxStepper/Assets/View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +204,7 @@
 		B71F4034C74353641AC27C0A351CEA9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F4953F4348D935DB14B874F38EC2C9D1 /* RxStepper.xib */,
+				F4953F4348D935DB14B874F38EC2C9D1 /* View.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -389,7 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F42615F27282F4789BE76796A24F72A /* RxStepper.xib in Resources */,
+				0F42615F27282F4789BE76796A24F72A /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,8 +740,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
