@@ -1,6 +1,21 @@
 import UIKit
 
+private protocol RxStepperViewModelDelegate {
+    func didUpdateValue(_ vm: RxStepperViewModel)
+}
+
+private class RxStepperViewModel {
+    var value: Int = 0 {
+        didSet {
+            delegate?.didUpdateValue(self)
+        }
+    }
+    var delegate: RxStepperViewModelDelegate?
+}
+
 public class RxStepper: UIView {
+    
+    private var viewModel = RxStepperViewModel()
     
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var valueLabel: UILabel!
@@ -37,6 +52,8 @@ public class RxStepper: UIView {
         view = nib?.first as? UIView
         view.frame = self.bounds
         self.addSubview(view)
+        
+        viewModel.delegate = self
     }
     
     public override var intrinsicContentSize: CGSize {
@@ -59,4 +76,19 @@ public class RxStepper: UIView {
         return size
     }
     
+}
+
+
+extension RxStepper {
+    
+    @IBAction func stepper(_ sender: UIStepper) {
+        viewModel.value = Int(sender.value)
+    }
+}
+
+extension RxStepper: RxStepperViewModelDelegate {
+    
+    fileprivate func didUpdateValue(_ vm: RxStepperViewModel) {
+        valueLabel.text = "value: \(vm.value)"
+    }
 }
