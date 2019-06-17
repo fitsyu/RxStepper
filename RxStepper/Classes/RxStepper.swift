@@ -9,9 +9,16 @@ private class RxStepperViewModel {
 
 public class RxStepper: UIView {
     
+    public var title: String?  = "" { didSet { titleLabel.text = title }}
+    public var startValue: Int = 0  { didSet { stepper.minimumValue = Double(startValue) }}
+    public var endValue: Int   = 0  { didSet { stepper.maximumValue = Double(endValue) }}
+    public func value() -> Int { return viewModel.value.value }
+
+    
     private var viewModel = RxStepperViewModel()
     let disposeBag = DisposeBag()
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var valueLabel: UILabel!
     
@@ -77,7 +84,7 @@ public class RxStepper: UIView {
         viewModel.value
             .asObservable()
             .subscribe(onNext: { [unowned self]  newValue in
-                self.valueLabel.text = "value: \(newValue)"
+                self.valueLabel.text = "\(newValue)"
             })
             .disposed(by: self.disposeBag)
     }
