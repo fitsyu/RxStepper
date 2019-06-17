@@ -2,6 +2,9 @@ use_frameworks!
 
 target 'RxStepper_Example' do
   pod 'RxStepper', :path => '../'
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   target 'RxStepper_Tests' do
     inherit! :search_paths

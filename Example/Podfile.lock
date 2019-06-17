@@ -1,16 +1,35 @@
 PODS:
-  - RxStepper (0.1.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxStepper (0.1.0):
+    - RxCocoa
+    - RxSwift
+  - RxSwift (5.0.0)
 
 DEPENDENCIES:
+  - RxCocoa
   - RxStepper (from `../`)
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 EXTERNAL SOURCES:
   RxStepper:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RxStepper: 88cf76452ceaacf7e8bc4e91615d170d3ab61b02
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxStepper: fb23e54c6f96edb9d918ce173de1e12069d3d333
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: a12a3d8c9b2743c377d1146f53e5b53f9ace2ca6
+PODFILE CHECKSUM: d267f9603a730e028f001ec3ea3a5ca074150003
 
 COCOAPODS: 1.6.1

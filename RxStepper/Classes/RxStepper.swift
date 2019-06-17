@@ -1,21 +1,16 @@
 import UIKit
-
-private protocol RxStepperViewModelDelegate {
-    func didUpdateValue(_ vm: RxStepperViewModel)
-}
+import RxSwift
+import RxCocoa
 
 private class RxStepperViewModel {
-    var value: Int = 0 {
-        didSet {
-            delegate?.didUpdateValue(self)
-        }
-    }
-    var delegate: RxStepperViewModelDelegate?
+    
+    var value : BehaviorRelay<Int> = BehaviorRelay(value: 0)
 }
 
 public class RxStepper: UIView {
     
     private var viewModel = RxStepperViewModel()
+    let disposeBag = DisposeBag()
     
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var valueLabel: UILabel!
@@ -53,7 +48,7 @@ public class RxStepper: UIView {
         view.frame = self.bounds
         self.addSubview(view)
         
-        viewModel.delegate = self
+        setupReactivity()
     }
     
     public override var intrinsicContentSize: CGSize {
@@ -76,19 +71,22 @@ public class RxStepper: UIView {
         return size
     }
     
+    // MARK: Reactivity
+    private func setupReactivity() {
+        
+        viewModel.value
+            .asObservable()
+            .subscribe(onNext: { [unowned self]  newValue in
+                self.valueLabel.text = "value: \(newValue)"
+            })
+            .disposed(by: self.disposeBag)
+    }
 }
 
 
 extension RxStepper {
     
     @IBAction func stepper(_ sender: UIStepper) {
-        viewModel.value = Int(sender.value)
-    }
-}
-
-extension RxStepper: RxStepperViewModelDelegate {
-    
-    fileprivate func didUpdateValue(_ vm: RxStepperViewModel) {
-        valueLabel.text = "value: \(vm.value)"
+        viewModel.value.accept( Int(sender.value) )
     }
 }
