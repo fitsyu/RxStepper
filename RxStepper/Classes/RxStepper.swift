@@ -57,7 +57,7 @@ public class RxStepper: UIView {
             + valueLabel.frame.width
             + 16.0 // space to stepper
             + stepper.frame.width
-            + 8.0 // trailing
+            + 16.0 // trailing
         
         let height: CGFloat = 0.0
         + 30.0 // title
