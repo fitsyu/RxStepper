@@ -12,6 +12,19 @@ public class RxStepper: UIView {
     public var title: String?  = "" { didSet { titleLabel.text = title }}
     public var startValue: Int = 0  { didSet { stepper.minimumValue = Double(startValue) }}
     public var endValue: Int   = 0  { didSet { stepper.maximumValue = Double(endValue) }}
+    public var currentValue: Int = 0 { didSet {
+        // cap the value
+        var valueToSet = currentValue
+        
+        if currentValue < startValue {
+            valueToSet = startValue
+        }
+        else if currentValue > endValue {
+            valueToSet = endValue
+        }
+        
+        viewModel.value.accept(valueToSet)}
+    }
     public func value() -> Int { return viewModel.value.value }
 
     
