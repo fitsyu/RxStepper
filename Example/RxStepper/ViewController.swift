@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         capactiyStepper.title = "Kapasitas Kamar"
         capactiyStepper.startValue = 1
         capactiyStepper.endValue   = 4
+        capactiyStepper.currentValue = 5
         
         capactiyStepper.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(capactiyStepper)
@@ -37,7 +38,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPress(_ sender: UIButton) {
         
-        let message = " The value is \(aRxStepper?.value()) "
+        let message = " The value is \(aRxStepper?.value() ?? -1) "
         
         let alert = UIAlertController(title: "Info", message: message,
                                       preferredStyle: .actionSheet)
